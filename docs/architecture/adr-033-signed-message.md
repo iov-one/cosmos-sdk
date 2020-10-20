@@ -31,7 +31,7 @@ Cosmos SDK 0.40 also introduces a concept of “auth_info” this can specify SI
 
 A spec should include an auth info that supports SIGN_MODE_DIRECT and SIGN_MODE_LEGACY_AMINO. 
 
-For SIGN_MODE_LEGACY_AMINO 
+### For SIGN_MODE_LEGACY_AMINO 
 
 Example of Signed Message:
 - the memo is empty
@@ -42,6 +42,7 @@ Example of Signed Message:
 
 Inside the message with the type **MsgSignText**,  we can put inside a text message and the address of the signer.
 
+Example:
 ```go
 {
   "type": "cosmos-sdk/StdTx",
@@ -74,9 +75,9 @@ Inside the message with the type **MsgSignText**,  we can put inside a text mess
 }
 ```
 
-For SIGN_MODE_DIRECT
-Example proto messages
+### For SIGN_MODE_DIRECT
 
+Example:
 ```go
 syntax = "proto3";
 package cosmos.signed_message.v1beta1;
