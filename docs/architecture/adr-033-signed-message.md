@@ -42,6 +42,7 @@ Example of Signed Message:
 
 Inside the message with the type **MsgSignText**,  we can put inside a text message and the address of the signer.
 
+```go
 {
   "type": "cosmos-sdk/StdTx",
   "value": {
@@ -71,10 +72,12 @@ Inside the message with the type **MsgSignText**,  we can put inside a text mess
     "memo": ""
   }
 }
+```
 
 For SIGN_MODE_DIRECT
 Example proto messages
 
+```go
 syntax = "proto3";
 package cosmos.signed_message.v1beta1;
 import "cosmos_proto/cosmos.proto";
@@ -92,6 +95,7 @@ message SignedMessage {
   string signer =2;
 
 }
+```
 
 Is a message in https://github.com/cosmos/cosmos-sdk/blob/master/proto/cosmos/tx/v1beta1/tx.proto
 
