@@ -37,7 +37,7 @@ A spec should include an auth info that supports SIGN_MODE_DIRECT and SIGN_MODE_
 - fee gaz should be equal to 0 
 - fee amount should be an empty array 
 
-Inside the message with the type **MsgSignText**,  we can put inside a text message and the address of the signer.
+Inside the message with the type **MsgSignText**,  we put inside a text message and the address of the signer.
 
 ### For SIGN_MODE_LEGACY_AMINO 
 
