@@ -31,16 +31,17 @@ Cosmos SDK 0.40 also introduces a concept of “auth_info” this can specify SI
 
 A spec should include an auth info that supports SIGN_MODE_DIRECT and SIGN_MODE_LEGACY_AMINO. 
 
-### For SIGN_MODE_LEGACY_AMINO 
-
-Example of Signed Message:
-- the memo is empty
-- nonce, sequence number are equal to 0 
-- chain-id is equal to “signed-message-version1” 
-- fee gaz equal to 0 
-- fee amount is an empty array 
+- the memo should be empty
+- nonce, sequence number should be equal to 0 
+- chain-id should be equal to “signed-message-version1” 
+- fee gaz should be equal to 0 
+- fee amount should be an empty array 
 
 Inside the message with the type **MsgSignText**,  we can put inside a text message and the address of the signer.
+
+### For SIGN_MODE_LEGACY_AMINO 
+
+
 
 Example:
 ```go
